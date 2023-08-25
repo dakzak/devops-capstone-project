@@ -117,5 +117,5 @@ def get_accounts(account_id):
     return account.serialize(), status.HTTP_200_OK
 def test_get_account_not_found(self):
     """It should not Read an Account that is not found"""
-    resp = self.client.get(f"{BASE_URL}/0")
+    resp = self.client.get(f"{"postgresql://postgres:pgs3cr3t@postgres:5432/testdb"}/0")
     self.assertEqual(resp.status_code, status.HTTP_404_NOT_FOUND)
