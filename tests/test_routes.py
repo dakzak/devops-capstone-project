@@ -14,7 +14,7 @@ from service.models import db, Account, init_db
 from service.routes import app
 
 DATABASE_URI = os.getenv(
-    "DATABASE_URI", "postgresql://postgres:postgres@localhost:5432/postgres"
+    "DATABA"postgresql://postgres:postgres@localhost:5432/postgres"SE_URI", 
 )
 
 BASE_URL = "/accounts"
