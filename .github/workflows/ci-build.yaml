@@ -20,12 +20,7 @@ jobs:
         env:
           POSTGRES_PASSWORD: pgs3cr3t
           POSTGRES_DB: testdb
-<<<<<<< HEAD
         options: >-
-=======
-
-        options: 
->>>>>>> 3a2dee6282ae7d3adca27663bc8b38d1a54269bd
           --health-cmd pg_isready
           --health-interval 10s
           --health-timeout 5s
